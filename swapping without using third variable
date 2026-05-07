@@ -1,7 +1,6 @@
 class Main {
     public static void main(String[] args) {
         int a=20,b=10;
-        int temp;
         System.out.println("before swapping a "+a );
         System.out.println("before swapping b "+b );
         a+=b;
