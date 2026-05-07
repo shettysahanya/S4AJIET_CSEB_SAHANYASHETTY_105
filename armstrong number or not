@@ -1,0 +1,22 @@
+public class Main
+{
+	public static void main(String[] args) {
+	    int a=153;
+	    int org=a;
+	    int sum=0;
+	    while(a!=0)
+	    {
+	        int dig=a%10;
+	        sum=sum+(dig*dig*dig);
+	        a=a/10;
+	    }
+	    if(sum==org)
+	    {
+		System.out.println("is an armstrong "+org);
+	    }
+	    else
+	    {
+	   System.out.println("not an armstrong "+org);
+	    }
+	}
+}
