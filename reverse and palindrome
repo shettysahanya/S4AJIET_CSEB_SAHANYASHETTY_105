@@ -4,6 +4,7 @@ class Main {
         Scanner k=new Scanner(System.in);
         System.out.println("Enter the value of n:");
         int n=k.nextInt();
+        int org=n;
         int rev=0,last=0;
         System.out.println("Value of n "+n);
         while(n>0)
@@ -13,13 +14,13 @@ class Main {
         n=n/10;
         }
         System.out.println("reversed string is "+rev);
-        if(rev==n)
+        if(org==rev)
         {
-            System.out.println("not palindrome"); 
+            System.out.println("palindrome"); 
         }
         else 
         {
-             System.out.println("is palindrome"); 
+             System.out.println("not palindrome"); 
         }
     }
 }
