@@ -1,0 +1,25 @@
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner k=new Scanner(System.in);
+        System.out.println("Enter the value of n:");
+        int n=k.nextInt();
+        int rev=0,last=0;
+        System.out.println("Value of n "+n);
+        while(n>0)
+        {
+        last=n%10;
+        rev=rev*10+last;
+        n=n/10;
+        }
+        System.out.println("reversed string is "+rev);
+        if(rev==n)
+        {
+            System.out.println("not palindrome"); 
+        }
+        else 
+        {
+             System.out.println("is palindrome"); 
+        }
+    }
+}
