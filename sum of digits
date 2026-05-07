@@ -1,16 +1,14 @@
-
-import java.util.Scanner;
-class Main {
-    public static void main(String[] args) {
-        Scanner k=new Scanner(System.in);
-        System.out.println("Enter the value of n:");
-        int n=k.nextInt();
-        System.out.println("Enter the value of m:");
-        int m=k.nextInt();
-        System.out.println("Enter the value of l:");
-        int l=k.nextInt();
-        int a;
-        a=n+m+l;
-        System.out.println("sum is "+a);
-    }
+public class Main
+{
+	public static void main(String[] args) {
+	    int a=968457;
+	    int sum=0;
+	    while(a!=0)
+	    {
+	        int dig=a%10;
+	        sum+=dig;
+	        a=a/10;
+	    }
+		System.out.println("sum "+sum);
+	}
 }
