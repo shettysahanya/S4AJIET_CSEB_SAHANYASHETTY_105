@@ -1,0 +1,16 @@
+
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner k=new Scanner(System.in);
+        System.out.println("Enter the value of n:");
+        int n=k.nextInt();
+        System.out.println("Enter the value of m:");
+        int m=k.nextInt();
+        System.out.println("Enter the value of l:");
+        int l=k.nextInt();
+        int a;
+        a=n+m+l;
+        System.out.println("sum is "+a);
+    }
+}
