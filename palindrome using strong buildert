@@ -1,0 +1,17 @@
+
+public class Main
+{
+	public static void main(String[] args) {
+        String s="madam";
+        String m=new StringBuilder(s).reverse().toString();
+        System.out.println("word:"+m);
+        if(s.equals(m))
+            {
+            System.out.println("palindromne");
+            }
+        else
+            {
+            System.out.println("not palindromne");
+            }
+	}
+}
