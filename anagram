@@ -1,0 +1,27 @@
+import java .util.Arrays;
+public class Main
+{
+	public static void main(String[] args) {
+	    String a,b;
+        String s1="listen";
+        String s2="silent";
+        System.out.println("FIRST WORD "+s1);
+        System.out.println("SECOND WORD "+s2);
+        a=s1.toLowerCase();
+        b=s2.toLowerCase();
+        if (a.length()!=b.length()){
+            System.out.println("not possible");
+         }
+        else{
+            char x[]=a.toCharArray();
+            char y[]=b.toCharArray();
+            Arrays.sort(x);    
+            Arrays.sort(y);
+            
+            if(Arrays.equals(x,y))
+                {
+                    System.out.println("anagram");
+                }
+        }
+	} 
+}
