@@ -1,0 +1,68 @@
+class Bottle{
+    String colour;
+    String brand;
+    int volume;
+   
+    
+   
+     Bottle( String colour,String brand,int volume) {
+     this.colour = colour;
+     this.brand = brand;
+     this.volume=volume;
+        }
+   boolean isEmpty=true;
+    int currentvolume=0;
+    boolean isFull=false;
+     boolean isOpen=false;
+     boolean isclosed=true;
+     
+     public void openCap(){
+           System.out.println("opening cap");
+           this.isOpen=true;
+           this.isclosed=false;
+           
+     }
+     public void closeCap(){
+           System.out.println("closing cap");
+           this.isOpen=false;
+           this.isclosed=true;
+           
+   }     
+    
+    public void drink(int consumed){
+         System.out.println("Drinking"+consumed+"ml of water");
+         this.currentvolume-=consumed;
+         if(this.currentvolume<=0)
+            this.isEmpty=true;
+         if(this.currentvolume!=this.volume)
+            this.isFull=true;
+    }
+    public void filling(int volume){
+         System.out.println("Filling"+volume+"ml of water");
+         this.currentvolume+=volume;
+        if(this.currentvolume==this.volume)
+            this.isFull=true;
+    
+        if(volume>0){
+            this.isEmpty=false;
+        }
+    }
+    public void display(){
+        System.out.printf("%s,%s,%d,%b,%b,%b",this.brand,this.colour,this.volume,this.isEmpty,this.isOpen,this.isclosed);
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        Bottle milton = new Bottle("red","milton",750);
+         milton.display();
+       
+        
+        milton.openCap();
+       milton.display();
+       milton.drink(750);
+       milton.display();
+       milton.closeCap();
+       milton.display();
+   
+    }
+}
