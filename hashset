@@ -1,0 +1,18 @@
+import java.util.*;
+
+class hashset
+{
+    public static void main(String[] args) 
+    {
+        String s="Discipline";
+        HashSet<Character> a = new HashSet<>();
+        for(Character c:s.toCharArray()){
+        a.add(c);
+        }
+      	
+        
+        System.out.println("size is "+a.size());
+        System.out.println("size is "+a);
+       
+    }
+}
